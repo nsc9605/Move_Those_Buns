@@ -4,7 +4,7 @@
 
 ## Description
 
-This is a fitness tracker that allows a user to create and track daily workouts as well as log multiple exercises in a workout on a given day. User will be able to track the **name, type, weight, sets, reps, and duration** of the exercise. And if the exercise chosen is a `cardio` exercise, the user is able to track the **distance** completed during the workout. The user will be able to view the combined weight of multiple exercises from the past week of workouts as well as view the duration of each workout.
+This is a fitness tracker that allows a user to create and track daily workouts as well as log multiple exercises in a workout on a given day. User will be able to track the `name, type, weight, sets, reps, and duration` of the exercise. And if the exercise chosen is a **cardio** exercise, the user is able to track the `distance` completed during the workout. The user will be able to view the combined weight of multiple exercises from the past week of workouts as well as view the duration of each workout.
 
 :round_pushpin: [Click here to navigate to deployed app on Heroku!](https://.herokuapp.com) :round_pushpin:
 
@@ -29,8 +29,8 @@ This is a fitness tracker that allows a user to create and track daily workouts 
   - `index.js` code to connect node to MySQL.
   - `Workout.js` which contains the methods used in order to retrieve and store data in the database.
 - The public folder contains the css and images files that represent the front-end.
-- The `seeders` folder contains the MySQL files including:
-  - `seed.js` which contain the SQL queries.
+- The `seeders` folder contains the mongodb files including:
+  - `seed.js` which contain the mongodb queries.
   - 
 
 ### Directory Structure
@@ -57,6 +57,12 @@ This is a fitness tracker that allows a user to create and track daily workouts 
 │       └── exercise.html
 │       └── index.html
 │       └── stats.html
+│
+│
+├── routes
+│   └── api-routes.js
+│   └── html-routes.js
+│
 │
 ├── seeders
 │   └── seed.js 
