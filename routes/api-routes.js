@@ -3,28 +3,33 @@ const router = require("express").Router();
 
 
 // GET workouts
-router.get("/api/workout", (req, res) => {
-  db.Workout.find({}).then(dbWorkout => {
-    // dbWorkou
-  });
-  res.json(dbWorkout);
-}). catch(err => {
-  res.json(err);
+// router.get("/api/workouts", (req, res) => {
+//   db.Workout.find({}).then(dbWorkout => {
+//     // dbWorkout
+//   });
+//   res.json(dbWorkout);
+// }). catch(err => {
+//   res.json(err);
+// });
+
+// Add exercise 
+router.put("/api/workouts/:id", (req, res) => {
+  db.Workout.findOneAndUpdate(
+    { _id: req.params.id },
+    { $push: { exercise: req.body } },
+    { new: true }).then(dbWorkout => {
+        res.json(dbWorkout)
+    }).catch(err => {
+      res.json(err);
+    });
 });
 
-
-router.post("/api/workout", ({ body }, res) => {
+// Create workout
+router.post("/api/workouts", ({ body }, res) => {
     db.Workout.create(body)
-      .then(({ _id }) => 
-      db.User.findOneAndUpdate(
-          { _id: req.params.id },
-          { $push: { exercise: req.body } },
-          { new: true }).then(dbWorkout => {
-              res.json(dbWorkout)
-          }).catch
-          )
-      .then(dbUser => {
-        res.json(dbUser);
+      .then(dbWorkout => {
+        console.log(dbWorkout)
+        res.json(dbWorkout);
       })
       .catch(err => {
         res.json(err);
