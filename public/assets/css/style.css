@@ -33,7 +33,7 @@ a:visited {
   color: inherit;
 }
 
-nav a:hover{
+nav a:hover {
   opacity: 0.7;
 }
 
@@ -427,6 +427,26 @@ form > button {
 .cardio-form,
 .resistance-form {
   padding: 10px;
+}
+
+.rich {
+  font-size: 40px;
+  color: hsl(94, 54%, 67%);
+  text-shadow: 4px 4px 4px rgb(19, 16, 16),
+              -1px 1px 2px #000, 
+              1px -1px 1px #000,
+              -1px -1px 1px #000;
+  padding: 20px;
+  margin: 20px;
+}
+#buns {
+  font-size: 45px;
+  font-style: italic;
+  color: rgb(206, 196, 240);
+  text-shadow: 4px 4px 4px rgb(19, 16, 16),
+              -1px 1px 2px #000, 
+              1px -1px 1px #000,
+              -1px -1px 1px #000;
 }
 
 @keyframes toast {
