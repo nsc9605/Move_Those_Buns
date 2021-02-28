@@ -4,6 +4,7 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 
 const PORT = process.env.PORT || 8080;
+// Require info from .env file
 require("dotenv").config();
 
 const db = require("./models");
@@ -29,7 +30,7 @@ mongoose.connect(
     console.log("Mongoose is connected");
   }
 );
-
+// Use/require routes files
 app.use(require("./routes/api-routes.js"));
 app.use(require("./routes/html-routes.js"));
 
