@@ -17,7 +17,7 @@ body {
 }
 
 nav {
-  background-color: #5793fd;
+  background-color: #cda9ff;
   color: #ffffff;
   height: 80px;
   padding: 10px;
@@ -41,10 +41,15 @@ header {
   height: 150px;
   padding-top: 80px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
 
 header h1 {
+  font-family: "Limelight", cursive;
+  font-size: 3.5rem;
+  color: rgb(238, 238, 133);
+  text-shadow: 4px 4px 4px rgb(19, 16, 16), -1px 1px 2px #000, 1px -1px 1px #000,
+    -1px -1px 1px #000;
   transform: skewX(-2deg);
 }
 
@@ -75,7 +80,7 @@ select:hover {
 
 select:focus {
   border-color: #aaa;
-  box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
+  box-shadow: 0 0 1px 3px #cda9ff;
   box-shadow: 0 0 0 3px -moz-mac-focusring;
   color: #222;
   outline: none;
