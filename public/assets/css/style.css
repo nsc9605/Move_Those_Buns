@@ -10,6 +10,8 @@ html,
 body,
 .wrapper {
   height: 100%;
+  background-color: #f2f8ff;
+  background-size: cover;
 }
 
 body {
@@ -19,6 +21,7 @@ body {
 nav {
   background-color: #cda9ff;
   color: #ffffff;
+
   height: 80px;
   padding: 10px;
   line-height: 3;
@@ -108,7 +111,7 @@ input {
 }
 
 .wrapper {
-  background-color: #f2f8ff;
+  
   padding-bottom: 100px;
 }
 
@@ -441,6 +444,16 @@ form > button {
   padding: 10px;
 }
 
+#quote-container {
+  min-width: 350px;
+  min-height: 400px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  background-color: #f2f8ff;
+}
+
 .quote {
   width: 450px;
   height: 400px;
@@ -463,7 +476,7 @@ form > button {
     -1px -1px 1px #000;
 }
 /* Photo and Quote container */
-.rich-container {
+/* .rich-box {
   display: flex;
   flex-wrap: wrap;
   padding-right: 20px;
@@ -471,12 +484,12 @@ form > button {
   float: right;
   min-width: 200px;
   min-height: 200px;
-}
+} */
 /* Settings for quote credit */
-figcaption {
+#credit {
   padding: 10px;
-  float: right;
-  position: relative;
+  display: inline-block;
+  align-items: right;
   font-size: 1em;
   line-height: 0;
   bottom: 1em;
@@ -538,24 +551,27 @@ blockquote cite:before {
   }
 }
 
-/* @media (min-width: 550px) {
-  .rich-container {
-    width: 50%;
-    height: 50%;
+/* @media (min-width: 580px) {
+  #quote-container {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     padding: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: wrap;
   }
-}
-
+} */
+/* 
 @media (min-width: 300px) {
   .rich-container {
     width: 40%;
     height: 40%;
     padding: 10px;
     overflow: hidden;
-    text-overflow:clip;
+    text-overflow: clip;
     white-space: wrap;
   }
 } */

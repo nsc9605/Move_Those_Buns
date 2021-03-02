@@ -4,7 +4,7 @@
 
 ## Description
 
-This is a fitness tracker that allows a user to create and track daily workouts as well as log multiple exercises in a workout on a given day. User will be able to track the `name, type, weight, sets, reps, and duration` of the exercise. And if the exercise chosen is a **cardio** exercise, the user is able to track the `distance` completed during the workout. The user will be able to view the combined weight of multiple exercises from the past week of workouts as well as view the duration of each workout.
+This is a fitness tracker that allows a user to create and track daily workouts with the option to **Continue Workout** or create **New Workout**. User will be able to track the `name, type, weight, sets, reps, and duration` of the exercise. And if the exercise chosen is a **cardio** exercise, the user is able to track the `distance` completed during the workout. The user will be able to view the combined weight of multiple exercises from the past week of workouts as well as view the duration of each workout.
 
 :round_pushpin: [Click here to navigate to deployed app on Heroku!](https://move-those-buns.herokuapp.com/) :round_pushpin:
 
