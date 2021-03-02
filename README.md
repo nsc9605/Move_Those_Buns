@@ -20,8 +20,17 @@ This is a fitness tracker that allows a user to create and track daily workouts 
 - [Contact Information](#contact-information)
 
 ## Demonstration
+### Home Page
+![Work Those Buns Main](./public/assets/img/main.png)
 
-![Work Those Buns Gif](./public/assets/img/.gif)
+### Cardio Menu
+![Work Those Buns Cardio](./public/assets/img/cardio.png)
+
+### Resistance Menu
+![Work Those Buns Resistance](./public/assets/img/resistance.png)
+
+### Stats Page
+![Work Those Buns Stats](./public/assets/img/graphs.png)
 
 ## Features
 
@@ -41,38 +50,45 @@ This is a fitness tracker that allows a user to create and track daily workouts 
 │   └── Workout.js
 │ 
 ├── node_modules
-│ 
-├── package.json
 │
 ├── public
 │   └── assets
 │       ├── css
 │       │  └── style.css
+│       └── img
+│           └── cardio.png
+│           └── graphs.png
+│           └── main.png
+│           └── resistance.png
+│           └── rich.jpg
 │       └── js
 │           └── api.js
 │           └── exercise.js
 │           └── index.js
 │           └── stats.js
 │           └── workout.js 
-│       └── exercise.html
-│       └── index.html
-│       └── stats.html
-│
+│   └── exercise.html
+│   └── index.html
+│   └── stats.html
 │
 ├── routes
 │   └── api-routes.js
 │   └── html-routes.js
 │
-│
 ├── seeders
-│   └── seed.js 
+│   └── seed.js
+│
+├── package-lock.json
+├── package.json  
 │
 ├── server.js
 ```
 
 ## Installation
 
-The following dependencies are required to be installed for this application to run properly:
+This application is deployed through Heroku for immediate use.
+
+However; if a user desires to work on this locally, they may clone this repository and the following dependencies are required to be installed for this application to run properly:
 
       npm i
       npm install express
@@ -82,7 +98,7 @@ The following dependencies are required to be installed for this application to 
 
 ## Usage
 
-Once all dependencies have been installed, users should run the following command in the terminal:
+Once all packages have been installed, users should run the following command in the terminal:
 
      `node server.js`
 
@@ -90,7 +106,6 @@ This command and will instruct the app to begin listening on the `LocalHost: POR
 
     `localhost:8080`.
 
-A deployed link is provided for this specific project through Heroku.
 
 ## License
 
@@ -105,8 +120,6 @@ This project was creating with help from:
 - Provided material from: BootCamp Spot class
 - My tutor [Eric Wallen](https://github.com/ericwallen)
 - Help from other students in the class in a private study group.
-
-This video helped get me started setting up my files and making sure I had all required dependencies installed:
 
 
 ## Technologies

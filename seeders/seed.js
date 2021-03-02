@@ -1,6 +1,7 @@
+require("dotenv").config();
 let mongoose = require("mongoose");
 let db = require("../models");
-require("dotenv").config();
+
 
 mongoose.connect(process.env.ATLAS_URI, {
   useNewUrlParser: true,

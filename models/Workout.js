@@ -21,32 +21,33 @@ const workoutSchema = new Schema({
       },
       duration: {
         type: Number,
-        // default: 0,
-        // allowNull: true
+        default: 0,
+        allowNull: true
       },
       weight: {
         type: Number,
-        // allowNull: true,
+        default: 0,
+        allowNull: true,
       },
       reps: {
         type: Number,
-        // default: 0,
-        // allowNull: true,
+        default: 0,
+        allowNull: true,
       },
       sets: {
         type: Number,
-        // default: 0,
-        // allowNull: true
+        default: 0,
+        allowNull: true
       },
       distance: {
         type: Number,
-        // default: 0,
-        // allowNull: true
+        default: 0,
+        allowNull: true
       },
       distance: {
         type: Number,
-        // default: 0,
-        // allowNull: true        
+        default: 0,
+        allowNull: true        
       },
     },
   ],
