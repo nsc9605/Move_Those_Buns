@@ -26,7 +26,6 @@ const workoutSchema = new Schema({
       },
       weight: {
         type: Number,
-        // default: 0,
         // allowNull: true,
       },
       reps: {
@@ -43,6 +42,11 @@ const workoutSchema = new Schema({
         type: Number,
         // default: 0,
         // allowNull: true
+      },
+      distance: {
+        type: Number,
+        // default: 0,
+        // allowNull: true        
       },
     },
   ],
