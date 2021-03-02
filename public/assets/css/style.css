@@ -22,13 +22,16 @@ nav {
   height: 80px;
   padding: 10px;
   line-height: 3;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 a,
 a:hover,
 a:active,
 a:visited {
+  font-family: "Limelight", cursive;
+  text-shadow: 3px 3px 3px rgb(19, 16, 16), -1px 1px 2px #000, 1px -1px 1px #000,
+    -1px -1px 1px #000;
   text-decoration: none;
   color: inherit;
 }
@@ -447,11 +450,9 @@ form > button {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  border:rgb(10, 4, 4) solid 1px;
-  border-radius: .5em;
+  border: rgb(10, 4, 4) solid 1px;
+  border-radius: 0.5em;
   box-shadow: 3px 3px 3px 3px;
-  /* padding: 1em; */
-  
 }
 
 #buns {
@@ -461,27 +462,29 @@ form > button {
   text-shadow: 4px 4px 4px rgb(19, 16, 16), -1px 1px 2px #000, 1px -1px 1px #000,
     -1px -1px 1px #000;
 }
-
+/* Photo and Quote container */
 .rich-container {
+  display: flex;
+  flex-wrap: wrap;
   padding-right: 20px;
+  padding-left: 20px;
   float: right;
-  
+  min-width: 200px;
+  min-height: 200px;
 }
+/* Settings for quote credit */
 figcaption {
-  padding-right: 20px;
+  padding: 10px;
   float: right;
-  position: absolute;
+  position: relative;
   font-size: 1em;
   line-height: 0;
-  bottom: -4em;
+  bottom: 1em;
   right: 1em;
   color: black;
-  /* text-shadow: 4px 4px 4px rgb(19, 16, 16),1px 1px 1px #000,
-    -1px -1px 1px rgb(10, 4, 4); */
-    font: 1.1rem/1.2 "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  /* font-weight: bold; */
-  }
-
+  font: 1.1rem/1.2 "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
 
 blockquote {
   position: relative;
@@ -492,18 +495,18 @@ blockquote {
   color: hsl(0, 0%, 100%);
   text-shadow: 4px 4px 4px rgb(19, 16, 16), -1px 1px 2px #000, 1px -1px 1px #000,
     -1px -1px 1px rgb(10, 4, 4);
-  
 }
-/* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
+/* Larger quotes before quote */
 blockquote:before {
   font-family: Georgia, serif;
   position: absolute;
   font-size: 4em;
   line-height: 0;
-  top: .4em;
-  left: .43em;
+  top: 0.4em;
+  left: 0.43em;
   content: "\201C";
 }
+/* Larger quotes after quote */
 blockquote:after {
   font-family: Georgia, serif;
   position: absolute;
@@ -524,7 +527,6 @@ blockquote cite:before {
   content: "\2013";
 }
 
-
 @keyframes toast {
   50% {
     opacity: 1;
@@ -535,3 +537,25 @@ blockquote cite:before {
     right: -320px;
   }
 }
+
+/* @media (min-width: 550px) {
+  .rich-container {
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;
+  }
+}
+
+@media (min-width: 300px) {
+  .rich-container {
+    width: 40%;
+    height: 40%;
+    padding: 10px;
+    overflow: hidden;
+    text-overflow:clip;
+    white-space: wrap;
+  }
+} */
