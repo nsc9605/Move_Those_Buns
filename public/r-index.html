@@ -8,15 +8,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
     />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    /> -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Limelight&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Fitness Tracker</title>
   </head>
@@ -40,10 +31,12 @@
                 <a
                   id="continue-btn"
                   href="/exercise?"
-                  class="huge ui olive button"
+                  class="huge ui blue button"
                   >Continue Workout</a
                 >
-                <a href="/exercise" class="huge teal ui button">New Workout</a>
+                <a href="/exercise" class="huge positive ui button"
+                  >New Workout</a
+                >
               </div>
             </div>
           </div>
@@ -53,26 +46,21 @@
         </div>
       </div>
       <!-- Inspirational quote from Richard Simmons -->
-      <div class="footer">
-        <div class="rich-container">
+       <div class="rich-container">
           <div class="quote">
             <blockquote>
-              <em
-                >Number one, love yourself. Have a lot of self worth. Number
-                two, lower your calories and watch your portions. And number
-                [three], <span id="buns">move those buns!</span></em
-              >
+              <em>Number one, love yourself. Have a lot of self worth.
+              Number two, lower your calories and watch your portions.
+              And number [three], <span id="buns">move those buns!</span></em>
             </blockquote>
           </div>
         </div>
-        <div>
-          <figcaption>
-            &mdash; Richard Simmons, <cite>The Ellen Show</cite> 2010
-          </figcaption>
-        </div>
-      </div>
+        
+        <figcaption>
+          &mdash; Richard Simmons, <cite>The Ellen Show</cite> 2010
+        </figcaption>
+      </div>      
     </div>
-    <!-- </div> -->
     <div id="toast">Workout Added Successfully!</div>
     <script src="assets/js//api.js"></script>
     <script src="assets/js/workout.js"></script>
