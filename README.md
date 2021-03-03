@@ -11,7 +11,6 @@ This is a fitness tracker that allows a user to create and track daily workouts 
 ## Table of Contents
 
 - [Demonstration](#demonstration)
-- [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
@@ -33,15 +32,6 @@ This is a fitness tracker that allows a user to create and track daily workouts 
 ### Stats Page
 ![Work Those Buns Stats](public/assets/img/graphs.png)
 
-## Features
-
-- The `models` folder houses the two javascript files:
-  - `index.js` code to connect node to MySQL.
-  - `Workout.js` which contains the methods used in order to retrieve and store data in the database.
-- The public folder contains the css and images files that represent the front-end.
-- The `seeders` folder contains the mongodb files including:
-  - `seed.js` which contain the mongodb queries.
-  - 
 
 ### Directory Structure
 
@@ -89,7 +79,7 @@ This is a fitness tracker that allows a user to create and track daily workouts 
 
 This application is deployed through Heroku for immediate use.
 
-However; if a user desires to work on this locally, they may clone this repository and the following dependencies are required to be installed for this application to run properly:
+However, if a user desires to work on this locally, they may clone this repository and the following dependencies are required to be installed for this application to run properly:
 
       npm i
       npm install express
