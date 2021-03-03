@@ -114,6 +114,7 @@ This project was creating with help from:
 - [MongoDB](https://www.mongodb.com/)
 - [Mongoose](https://mongoosejs.com/docs/)
 - [Dotenv](https://www.npmjs.com/package/dotenv)
+- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 - [Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - Terminal / Git Bash
