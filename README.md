@@ -23,12 +23,6 @@ This is a fitness tracker that allows a user to create and track daily workouts 
 ### Home Page
 ![Work Those Buns Main](public/assets/img/main.png)
 
-### Cardio Menu
-![Work Those Buns Cardio](public/assets/img/cardio.png)
-
-### Resistance Menu
-![Work Those Buns Resistance](public/assets/img/resistance.png)
-
 ### Stats Page
 ![Work Those Buns Stats](public/assets/img/graphs.png)
 
