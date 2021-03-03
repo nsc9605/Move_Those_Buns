@@ -41,11 +41,6 @@ const workoutSchema = new Schema({
       distance: {
         type: Number,
         default: 0,
-        allowNull: true
-      },
-      distance: {
-        type: Number,
-        default: 0,
         allowNull: true        
       },
     },
