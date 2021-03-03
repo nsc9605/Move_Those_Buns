@@ -50,8 +50,6 @@ router.post("/api/workouts", ({ body }, res) => {
 
 // GET workouts in range to show stats
 router.get("/api/workouts/range", (req, res) => {
-  // db.Workout.find({})
-  
   db.Workout.aggregate([
     {
       $addFields: {
