@@ -20,6 +20,7 @@ This is a fitness tracker that allows a user to create and track daily workouts 
 - [Contact Information](#contact-information)
 
 ## Demonstration
+
 ### Home Page
 ![Work Those Buns Main](public/assets/img/main.png)
 
