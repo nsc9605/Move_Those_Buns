@@ -56,10 +56,11 @@ router.get("/api/workouts/range", (req, res) => {
         totalDuration: { $sum: "$exercises.duration" },
       },
     },
-  ]).sort( { "_id": 1, "day": 1 } )
+  ])
+    .sort({ day: -1, _id: -1 })
     .limit(7)
     .then((dbWorkout) => {
-      console.log(dbWorkout);
+      dbWorkout.reverse();
       res.json(dbWorkout);
     })
     .catch((err) => {
