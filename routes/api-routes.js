@@ -58,7 +58,7 @@ router.get("/api/workouts/range", (req, res) => {
     },
   ])
   // Add sort function for past seven days
-    .sort({ "day": -1, "_id": -1 })
+    .sort({ "day": -1 })
     .limit(7)
     .then((dbWorkout) => {
       dbWorkout.reverse();
